@@ -1,0 +1,62 @@
+(* Homework3 Simple Test*)
+(* These are basic test cases. Passing these tests does not guarantee that your code will pass the actual homework grader *)
+(* To run the test, add a new line to the top of this file: use "homeworkname.sml"; *)
+(* All the tests should evaluate to true. For example, the REPL should say: val test1 = true : bool *)
+
+use "hw3solution.sml";
+
+val only_capitals1 = only_capitals ["A","B","C"] = ["A","B","C"]
+val only_capitals2 = only_capitals ["Ahmed","bebo","Chady"] = ["Ahmed","Chady"]
+val only_capitals3 = only_capitals [] = []
+val only_capitals4 = only_capitals ["ahmed","baba","ceso"] = []
+
+
+val longest_string11 = longest_string1 ["A","bc","C"] = "bc"
+val longest_string12 = longest_string1 [] = ""
+val longest_string13 = longest_string1 ["Ahmed","bc","C"] = "Ahmed"
+val longest_string14 = longest_string1 ["A","bc","Cocooo"] = "Cocooo"
+val longest_string15 = longest_string1 ["A","bc","hi"] = "bc"
+
+
+val longest_string2 = longest_string2 ["A","bc","hi"] = "hi"
+
+
+val longest_string31 = longest_string3 ["A","bc","C"] = "bc"
+val longest_string32 = longest_string3 [] = ""
+val longest_string33 = longest_string3 ["Ahmed","bc","C"] = "Ahmed"
+val longest_string34 = longest_string3 ["A","bc","Cocooo"] = "Cocooo"
+val longest_string35 = longest_string3 ["A","bc","hi"] = "bc"
+
+val longest_string4 = longest_string4 ["A","bc","hi"] = "hi"
+
+
+val longest_capitalized1 = longest_capitalized ["A","bc","C"] = "A"
+val longest_capitalized2 = longest_capitalized ["hamo","bc","beka"] = ""
+val longest_capitalized3 = longest_capitalized ["ahmed","bc","Esmail", "Cocooo1"] = "Cocooo1"
+val longest_capitalized4 = longest_capitalized ["Hi","Hello","OMGFG"] = "Hello"
+
+
+val rev_string1 = rev_string "abc" = "cba"
+
+
+val first_answer1 = first_answer (fn x => if x > 3 then SOME x else NONE) [1,2,3,4,5] = 4
+val first_answer2 = first_answer (fn x => if x > 3 then SOME x else NONE) [1,2,3] = NONE
+
+
+
+(*
+val test8 = all_answers (fn x => if x = 1 then SOME [x] else NONE) [2,3,4,5,6,7] = NONE
+
+val test9a = count_wildcards Wildcard = 1
+
+val test9b = count_wild_and_variable_lengths (Variable("a")) = 1
+
+val test9c = count_some_var ("x", Variable("x")) = 1
+
+val test10 = check_pat (Variable("x")) = true
+
+val test11 = match (Const(1), UnitP) = NONE
+
+val test12 = first_match Unit [UnitP] = SOME []
+
+*)

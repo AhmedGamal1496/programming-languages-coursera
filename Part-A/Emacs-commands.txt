@@ -1,0 +1,28 @@
+Minimally functional commands:
+
+Note that C means Control and M means meta (which is the escape key on the mac rather than alt – annoying because I can touch type alt but not escape)
+
+    C-x, C-f – open a file
+    C-x, C-s – save current file – I use this one a lot!
+    C-x, C-c – quit emacs
+    C-x 0 (that is a zero) – close the current split window and merge into one
+    C-x o (that is a lower case o) – switch between split windows
+    C-x 2 – split into two buffers – I actually stopped using this pretty quickly as I found it easier to have two tabs with emacs open. I’ve seen multiple buffers used very effectively though.
+    C-c, C-s – open sml RPEL – I stopped using this quickly as well
+    Cx Cc – prompt to save and exit
+    C-D – restart RPEL – stopped using as well
+    M-p -previous RPEL – stopped using as well
+
+Second iteration of using emacs better – navigating with the keyboard
+
+    C-a – beginning of line
+    C-e – end of line
+    C-v – page down
+    M-v page up – note must re-press escape each time
+    C-s – regular expression search
+
+Third iteration
+
+    C-k – delete to end of line
+    M < – beginning of file (yes that is escape + shift + , on a mac
+    M > – end of file
